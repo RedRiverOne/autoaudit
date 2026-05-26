@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AutoAudit Report — https://dev.rrone.in</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.5}
+.container{max-width:1100px;margin:0 auto;padding:2rem 1.5rem}
+h1{font-size:1.5rem;font-weight:800;margin-bottom:.25rem}
+h2{font-size:1.25rem;font-weight:700;margin:2.5rem 0 1rem;padding-bottom:.5rem;border-bottom:2px solid #e2e8f0}
+h3{font-size:1rem;font-weight:600;margin:.75rem 0 .5rem}
+.meta{font-size:.8rem;color:#64748b;margin-bottom:2rem}
+.dashboard{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin-bottom:2rem}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:1.25rem;text-align:center}
+.card-value{font-size:2rem;font-weight:800;line-height:1}
+.card-label{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#64748b;margin-top:.375rem}
+.issue{background:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:.875rem 1rem;margin-bottom:.5rem}
+.issue-header{display:flex;align-items:center;gap:.5rem;font-weight:600;font-size:.85rem}
+.badge{display:inline-block;padding:.125rem .5rem;border-radius:99px;font-size:.65rem;font-weight:700;color:#fff}
+.issue-detail{font-size:.8rem;color:#475569;margin-top:.375rem}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:.5rem 0}
+th,td{padding:.5rem .75rem;text-align:left;border-bottom:1px solid #e2e8f0}
+th{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#64748b;background:#f8fafc}
+.screenshot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem}
+.screenshot-card{background:#fff;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden}
+.screenshot-card img{width:100%;height:200px;object-fit:cover;object-position:top}
+.screenshot-card .caption{padding:.75rem;font-size:.8rem;font-weight:600}
+details{margin:.5rem 0}
+summary{cursor:pointer;font-weight:600;font-size:.85rem;padding:.5rem 0;color:#334155}
+.empty{text-align:center;padding:2rem;color:#94a3b8;font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>AutoAudit Report</h1>
+<div class="meta">
+  https://dev.rrone.in &middot; 2026-05-26T06:52:06.865Z &middot; 66s &middot; 1 pages
+</div>
+
+<div class="dashboard">
+  <div class="card">
+    <div class="card-value" style="color:#2563eb">B</div>
+    <div class="card-label">Overall Grade</div>
+  </div>
+  <div class="card">
+    <div class="card-value">43</div>
+    <div class="card-label">Performance</div>
+  </div>
+  <div class="card">
+    <div class="card-value">83</div>
+    <div class="card-label">Accessibility</div>
+  </div>
+  <div class="card">
+    <div class="card-value">100</div>
+    <div class="card-label">SEO</div>
+  </div>
+  <div class="card">
+    <div class="card-value">0</div>
+    <div class="card-label">Broken Links</div>
+  </div>
+  <div class="card">
+    <div class="card-value">0</div>
+    <div class="card-label">Security Issues</div>
+  </div>
+  <div class="card">
+    <div class="card-value">11</div>
+    <div class="card-label">A11y Violations</div>
+  </div>
+</div>
+
+<h2>Broken Links</h2><div class="empty">No broken links found</div>
+
+<h2>Security (0)</h2>
+<div class="empty">No security issues found</div>
+
+<h2>Accessibility</h2>
+
+<div class="issue">
+  <div class="issue-header">
+    <span class="badge" style="background:#ea580c">critical</span>
+    button-name — / (Desktop)
+  </div>
+  <div class="issue-detail">Ensure buttons have discernible text<br><a href="https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright" target="_blank">Learn more</a></div>
+</div>
+<div class="issue">
+  <div class="issue-header">
+    <span class="badge" style="background:#ea580c">serious</span>
+    color-contrast — / (Desktop)
+  </div>
+  <div class="issue-detail">Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds<br><a href="https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright" target="_blank">Learn more</a></div>
+</div>
+<div class="issue">
+  <div class="issue-header">
+    <span class="badge" style="background:#ea580c">critical</span>
+    select-name — / (Desktop)
+  </div>
+  <div class="issue-detail">Ensure select element has an accessible name<br><a href="https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright" target="_blank">Learn more</a></div>
+</div>
+<div class="issue">
+  <div class="issue-header">
+    <span class="badge" style="background:#ea580c">critical</span>
+    button-name — / (Mobile)
+  </div>
+  <div class="issue-detail">Ensure buttons have discernible text<br><a href="https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright" target="_blank">Learn more</a></div>
+</div>
+<div class="issue">
+  <div class="issue-header">
+    <span class="badge" style="background:#ea580c">serious</span>
+    color-contrast — / (Mobile)
+  </div>
+  <div class="issue-detail">Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds<br><a href="https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright" target="_blank">Learn more</a></div>
+</div>
+<div class="issue">
+  <div class="issue-header">
+    <span class="badge" style="background:#d97706">moderate</span>
+    heading-order — / (Mobile)
+  </div>
+  <div class="issue-detail">Ensure the order of headings is semantically correct<br><a href="https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright" target="_blank">Learn more</a></div>
+</div>
+<div class="issue">
+  <div class="issue-header">
+    <span class="badge" style="background:#ea580c">critical</span>
+    select-name — / (Mobile)
+  </div>
+  <div class="issue-detail">Ensure select element has an accessible name<br><a href="https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright" target="_blank">Learn more</a></div>
+</div>
+<div class="issue">
+  <div class="issue-header">
+    <span class="badge" style="background:#ea580c">critical</span>
+    button-name — / (Tablet)
+  </div>
+  <div class="issue-detail">Ensure buttons have discernible text<br><a href="https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright" target="_blank">Learn more</a></div>
+</div>
+<div class="issue">
+  <div class="issue-header">
+    <span class="badge" style="background:#ea580c">serious</span>
+    color-contrast — / (Tablet)
+  </div>
+  <div class="issue-detail">Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds<br><a href="https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright" target="_blank">Learn more</a></div>
+</div>
+<div class="issue">
+  <div class="issue-header">
+    <span class="badge" style="background:#d97706">moderate</span>
+    heading-order — / (Tablet)
+  </div>
+  <div class="issue-detail">Ensure the order of headings is semantically correct<br><a href="https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright" target="_blank">Learn more</a></div>
+</div>
+<div class="issue">
+  <div class="issue-header">
+    <span class="badge" style="background:#ea580c">critical</span>
+    select-name — / (Tablet)
+  </div>
+  <div class="issue-detail">Ensure select element has an accessible name<br><a href="https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright" target="_blank">Learn more</a></div>
+</div>
+
+<h2>Lighthouse Scores</h2>
+<table>
+<thead><tr><th>Page</th><th>Performance</th><th>Accessibility</th><th>SEO</th><th>Best Practices</th></tr></thead>
+<tbody>
+
+<tr>
+  <td>/</td>
+  <td>43</td>
+  <td>83</td>
+  <td>100</td>
+  <td>100</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Visual Audit</h2>
+<div class="screenshot-grid">
+
+<div class="screenshot-card">
+  <img src="screenshots\desktop\home.png" alt="/ — Desktop" loading="lazy" />
+  <div class="caption">/ — Desktop (4685ms)
+    <br><span style="color:#d97706">10 issue(s)</span>
+  </div>
+</div>
+<div class="screenshot-card">
+  <img src="screenshots\mobile\home.png" alt="/ — Mobile" loading="lazy" />
+  <div class="caption">/ — Mobile (4796ms)
+    <br><span style="color:#d97706">10 issue(s)</span>
+  </div>
+</div>
+<div class="screenshot-card">
+  <img src="screenshots\tablet\home.png" alt="/ — Tablet" loading="lazy" />
+  <div class="caption">/ — Tablet (4662ms)
+    <br><span style="color:#d97706">10 issue(s)</span>
+  </div>
+</div>
+</div>
+
+
+
+</div>
+</body>
+</html>

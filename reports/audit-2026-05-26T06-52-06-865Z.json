@@ -1,0 +1,588 @@
+{
+  "timestamp": "2026-05-26T06:52:06.865Z",
+  "baseUrl": "https://dev.rrone.in",
+  "durationMs": 66302,
+  "pages": [
+    {
+      "url": "https://dev.rrone.in/",
+      "path": "/",
+      "statusCode": 200,
+      "devices": [
+        {
+          "device": "Desktop",
+          "screenshotPath": "C:\\Users\\202211578\\OneDrive - Euclid Innovations\\Documents\\RR1\\autoaudit\\reports\\screenshots\\desktop\\home.png",
+          "accessibility": {
+            "violations": [
+              {
+                "id": "button-name",
+                "impact": "critical",
+                "description": "Ensure buttons have discernible text",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+                "nodes": [
+                  {
+                    "target": [
+                      ".prop-card--platinum > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn"
+                    ],
+                    "html": "<button class=\"prop-icon-btn svelte-1fplyk9\">"
+                  },
+                  {
+                    "target": [
+                      ".md\\:w-\\[calc\\(50\\%_-_0\\.75rem\\)\\].lg\\:w-\\[calc\\(25\\%_-_1\\.125rem\\)\\].w-full:nth-child(2) > article > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn"
+                    ],
+                    "html": "<button class=\"prop-icon-btn svelte-1fplyk9\">"
+                  },
+                  {
+                    "target": [
+                      ".md\\:w-\\[calc\\(50\\%_-_0\\.75rem\\)\\].lg\\:w-\\[calc\\(25\\%_-_1\\.125rem\\)\\].w-full:nth-child(3) > article > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn"
+                    ],
+                    "html": "<button class=\"prop-icon-btn svelte-1fplyk9\">"
+                  },
+                  {
+                    "target": [
+                      ".md\\:w-\\[calc\\(50\\%_-_0\\.75rem\\)\\].lg\\:w-\\[calc\\(25\\%_-_1\\.125rem\\)\\].w-full:nth-child(4) > article > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn"
+                    ],
+                    "html": "<button class=\"prop-icon-btn svelte-1fplyk9\">"
+                  },
+                  {
+                    "target": [
+                      ".md\\:w-\\[calc\\(50\\%_-_0\\.75rem\\)\\].lg\\:w-\\[calc\\(25\\%_-_1\\.125rem\\)\\].w-full:nth-child(5) > article > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn"
+                    ],
+                    "html": "<button class=\"prop-icon-btn svelte-1fplyk9\">"
+                  }
+                ]
+              },
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+                "nodes": [
+                  {
+                    "target": [
+                      ".shadow-\\[0px_8px_20px_rgba\\(198\\,90\\,58\\,0\\.2\\)\\]"
+                    ],
+                    "html": "<button class=\"hidden rounded-lg bg...\">"
+                  },
+                  {
+                    "target": [
+                      ".search-btn"
+                    ],
+                    "html": "<a href=\"/search?\" class=\"search-btn svelte-1w0s7vk\">"
+                  },
+                  {
+                    "target": [
+                      ".advisor-cta-link"
+                    ],
+                    "html": "<a href=\"/contact\" class=\"advisor-cta-link svelte-1w0s7vk\">"
+                  },
+                  {
+                    "target": [
+                      ".stat-block.svelte-1w0s7vk:nth-child(1) > .stat-label.svelte-1w0s7vk"
+                    ],
+                    "html": "<span class=\"stat-label svelte-1w0s7vk\">Active Listings</span>"
+                  },
+                  {
+                    "target": [
+                      ".stat-block.svelte-1w0s7vk:nth-child(2) > .stat-label.svelte-1w0s7vk"
+                    ],
+                    "html": "<span class=\"stat-label svelte-1w0s7vk\">Texas Cities</span>"
+                  }
+                ]
+              },
+              {
+                "id": "select-name",
+                "impact": "critical",
+                "description": "Ensure select element has an accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright",
+                "nodes": [
+                  {
+                    "target": [
+                      ".filter-field.svelte-1w0s7vk:nth-child(3) > .select-wrap.svelte-1w0s7vk > .filter-select"
+                    ],
+                    "html": "<select class=\"filter-select  svelte-1w0s7vk\"><option value=\"\" selected=\"\">Any Price</option><option value=\"0-1000\">Under $1,000</option><option value=\"1000-2000\">$1,000 – $2,000</option><option value"
+                  },
+                  {
+                    "target": [
+                      ".filter-field.svelte-1w0s7vk:nth-child(5) > .select-wrap.svelte-1w0s7vk > .filter-select"
+                    ],
+                    "html": "<select class=\"filter-select  svelte-1w0s7vk\"><option value=\"\" selected=\"\">Any Beds</option><option value=\"0\">Studio</option><option value=\"1\">1+ Bed</option><option value=\"2\">2+ Beds</option><option "
+                  }
+                ]
+              }
+            ],
+            "passes": 45,
+            "incomplete": 2
+          },
+          "visualIssues": [
+            {
+              "type": "overflow",
+              "selector": "div.fixed",
+              "description": "Element extends 460px beyond viewport (460px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "div.flex",
+              "description": "Element extends 460px beyond viewport (460px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "div.svelte-k6vov3",
+              "description": "Element extends 234px beyond viewport (210px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "h2.text-lg",
+              "description": "Element extends 234px beyond viewport (210px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "p.mt-0.5",
+              "description": "Element extends 234px beyond viewport (210px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "button.flex",
+              "description": "Element extends 436px beyond viewport (36px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "svg.[object",
+              "description": "Element extends 427px beyond viewport (18px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "path.[object",
+              "description": "Element extends 423px beyond viewport (9px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "div.shrink-0",
+              "description": "Element extends 460px beyond viewport (460px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "button.flex-1",
+              "description": "Element extends 224px beyond viewport (196px wide)",
+              "severity": "warning"
+            }
+          ],
+          "loadTimeMs": 4685
+        },
+        {
+          "device": "Mobile",
+          "screenshotPath": "C:\\Users\\202211578\\OneDrive - Euclid Innovations\\Documents\\RR1\\autoaudit\\reports\\screenshots\\mobile\\home.png",
+          "accessibility": {
+            "violations": [
+              {
+                "id": "button-name",
+                "impact": "critical",
+                "description": "Ensure buttons have discernible text",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+                "nodes": [
+                  {
+                    "target": [
+                      ".-mr-2"
+                    ],
+                    "html": "<button class=\"-mr-2 p-2 text-[var(--c-fg)] lg:hidden\">"
+                  },
+                  {
+                    "target": [
+                      ".prop-card--platinum > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn"
+                    ],
+                    "html": "<button class=\"prop-icon-btn svelte-1fplyk9\">"
+                  },
+                  {
+                    "target": [
+                      ".md\\:w-\\[calc\\(50\\%_-_0\\.75rem\\)\\].lg\\:w-\\[calc\\(25\\%_-_1\\.125rem\\)\\].w-full:nth-child(2) > article > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn"
+                    ],
+                    "html": "<button class=\"prop-icon-btn svelte-1fplyk9\">"
+                  },
+                  {
+                    "target": [
+                      ".md\\:w-\\[calc\\(50\\%_-_0\\.75rem\\)\\].lg\\:w-\\[calc\\(25\\%_-_1\\.125rem\\)\\].w-full:nth-child(3) > article > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn"
+                    ],
+                    "html": "<button class=\"prop-icon-btn svelte-1fplyk9\">"
+                  },
+                  {
+                    "target": [
+                      ".md\\:w-\\[calc\\(50\\%_-_0\\.75rem\\)\\].lg\\:w-\\[calc\\(25\\%_-_1\\.125rem\\)\\].w-full:nth-child(4) > article > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn"
+                    ],
+                    "html": "<button class=\"prop-icon-btn svelte-1fplyk9\">"
+                  }
+                ]
+              },
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+                "nodes": [
+                  {
+                    "target": [
+                      ".mobile-search-btn"
+                    ],
+                    "html": "<a href=\"/search?\" class=\"mobile-search-btn svelte-1w0s7vk\">"
+                  },
+                  {
+                    "target": [
+                      ".advisor-cta-link"
+                    ],
+                    "html": "<a href=\"/contact\" class=\"advisor-cta-link svelte-1w0s7vk\">"
+                  },
+                  {
+                    "target": [
+                      ".stat-block.svelte-1w0s7vk:nth-child(1) > .stat-label.svelte-1w0s7vk"
+                    ],
+                    "html": "<span class=\"stat-label svelte-1w0s7vk\">Active Listings</span>"
+                  },
+                  {
+                    "target": [
+                      ".stat-block.svelte-1w0s7vk:nth-child(2) > .stat-label.svelte-1w0s7vk"
+                    ],
+                    "html": "<span class=\"stat-label svelte-1w0s7vk\">Texas Cities</span>"
+                  },
+                  {
+                    "target": [
+                      ".stat-block.svelte-1w0s7vk:nth-child(3) > .stat-label.svelte-1w0s7vk"
+                    ],
+                    "html": "<span class=\"stat-label svelte-1w0s7vk\">Listing Updates</span>"
+                  }
+                ]
+              },
+              {
+                "id": "heading-order",
+                "impact": "moderate",
+                "description": "Ensure the order of headings is semantically correct",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+                "nodes": [
+                  {
+                    "target": [
+                      ".mt-6.hover\\:shadow-\\[0px_15px_40px_rgba\\(0\\,0\\,0\\,0\\.06\\)\\].p-10:nth-child(1) > .gap-4.flex-col.flex > div > h4"
+                    ],
+                    "html": "<h4 class=\"text-sm font-bold text-[var(--c-fg)]\">Sarah Jenkins</h4>"
+                  },
+                  {
+                    "target": [
+                      ".cursor-pointer.p-5.rounded-\\[16px\\]:nth-child(1) > .svelte-jz8lnl:nth-child(2) > .mb-1"
+                    ],
+                    "html": "<h4 class=\"mb-1 text-xs font-bold text-white svelte-jz8lnl\">Company HQ</h4>"
+                  }
+                ]
+              },
+              {
+                "id": "select-name",
+                "impact": "critical",
+                "description": "Ensure select element has an accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright",
+                "nodes": [
+                  {
+                    "target": [
+                      ".select-wrap.svelte-1w0s7vk:nth-child(1) > .mobile-filter-select"
+                    ],
+                    "html": "<select class=\"mobile-filter-select  svelte-1w0s7vk\"><option value=\"\" selected=\"\">Any Price</option><option value=\"0-1000\">Under $1k</option><option value=\"1000-2000\">$1k – $2k</option><option value=\""
+                  },
+                  {
+                    "target": [
+                      ".select-wrap.svelte-1w0s7vk:nth-child(2) > .mobile-filter-select"
+                    ],
+                    "html": "<select class=\"mobile-filter-select  svelte-1w0s7vk\"><option value=\"\" selected=\"\">Any Beds</option><option value=\"0\">Studio</option><option value=\"1\">1+ Bed</option><option value=\"2\">2+ Beds</option><"
+                  }
+                ]
+              }
+            ],
+            "passes": 46,
+            "incomplete": 1
+          },
+          "visualIssues": [
+            {
+              "type": "overflow",
+              "selector": "div.fixed",
+              "description": "Element extends 390px beyond viewport (390px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "div.flex",
+              "description": "Element extends 390px beyond viewport (390px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "div.svelte-k6vov3",
+              "description": "Element extends 234px beyond viewport (210px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "h2.text-lg",
+              "description": "Element extends 234px beyond viewport (210px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "p.mt-0.5",
+              "description": "Element extends 234px beyond viewport (210px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "button.flex",
+              "description": "Element extends 366px beyond viewport (36px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "svg.[object",
+              "description": "Element extends 357px beyond viewport (18px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "path.[object",
+              "description": "Element extends 353px beyond viewport (9px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "div.shrink-0",
+              "description": "Element extends 390px beyond viewport (390px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "button.flex-1",
+              "description": "Element extends 189px beyond viewport (161px wide)",
+              "severity": "warning"
+            }
+          ],
+          "loadTimeMs": 4796
+        },
+        {
+          "device": "Tablet",
+          "screenshotPath": "C:\\Users\\202211578\\OneDrive - Euclid Innovations\\Documents\\RR1\\autoaudit\\reports\\screenshots\\tablet\\home.png",
+          "accessibility": {
+            "violations": [
+              {
+                "id": "button-name",
+                "impact": "critical",
+                "description": "Ensure buttons have discernible text",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+                "nodes": [
+                  {
+                    "target": [
+                      ".-mr-2"
+                    ],
+                    "html": "<button class=\"-mr-2 p-2 text-[var(--c-fg)] lg:hidden\">"
+                  },
+                  {
+                    "target": [
+                      ".prop-card--platinum > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn"
+                    ],
+                    "html": "<button class=\"prop-icon-btn svelte-1fplyk9\">"
+                  },
+                  {
+                    "target": [
+                      ".md\\:w-\\[calc\\(50\\%_-_0\\.75rem\\)\\].lg\\:w-\\[calc\\(25\\%_-_1\\.125rem\\)\\].w-full:nth-child(2) > article > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn"
+                    ],
+                    "html": "<button class=\"prop-icon-btn svelte-1fplyk9\">"
+                  },
+                  {
+                    "target": [
+                      ".md\\:w-\\[calc\\(50\\%_-_0\\.75rem\\)\\].lg\\:w-\\[calc\\(25\\%_-_1\\.125rem\\)\\].w-full:nth-child(3) > article > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn"
+                    ],
+                    "html": "<button class=\"prop-icon-btn svelte-1fplyk9\">"
+                  },
+                  {
+                    "target": [
+                      ".md\\:w-\\[calc\\(50\\%_-_0\\.75rem\\)\\].lg\\:w-\\[calc\\(25\\%_-_1\\.125rem\\)\\].w-full:nth-child(4) > article > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn"
+                    ],
+                    "html": "<button class=\"prop-icon-btn svelte-1fplyk9\">"
+                  }
+                ]
+              },
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+                "nodes": [
+                  {
+                    "target": [
+                      ".shadow-\\[0px_8px_20px_rgba\\(198\\,90\\,58\\,0\\.2\\)\\]"
+                    ],
+                    "html": "<button class=\"hidden rounded-lg bg...\">"
+                  },
+                  {
+                    "target": [
+                      ".search-btn"
+                    ],
+                    "html": "<a href=\"/search?\" class=\"search-btn svelte-1w0s7vk\">"
+                  },
+                  {
+                    "target": [
+                      ".advisor-cta-link"
+                    ],
+                    "html": "<a href=\"/contact\" class=\"advisor-cta-link svelte-1w0s7vk\">"
+                  },
+                  {
+                    "target": [
+                      ".stat-block.svelte-1w0s7vk:nth-child(1) > .stat-label.svelte-1w0s7vk"
+                    ],
+                    "html": "<span class=\"stat-label svelte-1w0s7vk\">Active Listings</span>"
+                  },
+                  {
+                    "target": [
+                      ".stat-block.svelte-1w0s7vk:nth-child(2) > .stat-label.svelte-1w0s7vk"
+                    ],
+                    "html": "<span class=\"stat-label svelte-1w0s7vk\">Texas Cities</span>"
+                  }
+                ]
+              },
+              {
+                "id": "heading-order",
+                "impact": "moderate",
+                "description": "Ensure the order of headings is semantically correct",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+                "nodes": [
+                  {
+                    "target": [
+                      ".mt-6.hover\\:shadow-\\[0px_15px_40px_rgba\\(0\\,0\\,0\\,0\\.06\\)\\].p-10:nth-child(1) > .gap-4.flex-col.flex > div > h4"
+                    ],
+                    "html": "<h4 class=\"text-sm font-bold text-[var(--c-fg)]\">Sarah Jenkins</h4>"
+                  },
+                  {
+                    "target": [
+                      ".cursor-pointer.p-5.rounded-\\[16px\\]:nth-child(1) > .svelte-jz8lnl:nth-child(2) > .mb-1"
+                    ],
+                    "html": "<h4 class=\"mb-1 text-xs font-bold text-white svelte-jz8lnl\">Company HQ</h4>"
+                  }
+                ]
+              },
+              {
+                "id": "select-name",
+                "impact": "critical",
+                "description": "Ensure select element has an accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright",
+                "nodes": [
+                  {
+                    "target": [
+                      ".filter-field.svelte-1w0s7vk:nth-child(3) > .select-wrap.svelte-1w0s7vk > .filter-select"
+                    ],
+                    "html": "<select class=\"filter-select  svelte-1w0s7vk\"><option value=\"\" selected=\"\">Any Price</option><option value=\"0-1000\">Under $1,000</option><option value=\"1000-2000\">$1,000 – $2,000</option><option value"
+                  },
+                  {
+                    "target": [
+                      ".filter-field.svelte-1w0s7vk:nth-child(5) > .select-wrap.svelte-1w0s7vk > .filter-select"
+                    ],
+                    "html": "<select class=\"filter-select  svelte-1w0s7vk\"><option value=\"\" selected=\"\">Any Beds</option><option value=\"0\">Studio</option><option value=\"1\">1+ Bed</option><option value=\"2\">2+ Beds</option><option "
+                  }
+                ]
+              }
+            ],
+            "passes": 46,
+            "incomplete": 1
+          },
+          "visualIssues": [
+            {
+              "type": "overflow",
+              "selector": "div.fixed",
+              "description": "Element extends 460px beyond viewport (460px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "div.flex",
+              "description": "Element extends 460px beyond viewport (460px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "div.svelte-k6vov3",
+              "description": "Element extends 234px beyond viewport (210px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "h2.text-lg",
+              "description": "Element extends 234px beyond viewport (210px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "p.mt-0.5",
+              "description": "Element extends 234px beyond viewport (210px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "button.flex",
+              "description": "Element extends 436px beyond viewport (36px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "svg.[object",
+              "description": "Element extends 427px beyond viewport (18px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "path.[object",
+              "description": "Element extends 423px beyond viewport (9px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "div.shrink-0",
+              "description": "Element extends 460px beyond viewport (460px wide)",
+              "severity": "warning"
+            },
+            {
+              "type": "overflow",
+              "selector": "button.flex-1",
+              "description": "Element extends 224px beyond viewport (196px wide)",
+              "severity": "warning"
+            }
+          ],
+          "loadTimeMs": 4662
+        }
+      ],
+      "lighthouse": {
+        "performance": 43,
+        "accessibility": 83,
+        "seo": 100,
+        "bestPractices": 100
+      }
+    }
+  ],
+  "brokenLinks": [],
+  "securityIssues": [],
+  "depVulnerabilities": [],
+  "summary": {
+    "totalPages": 1,
+    "brokenLinkCount": 0,
+    "accessibilityViolations": 11,
+    "securityCounts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "avgLighthouse": {
+      "performance": 43,
+      "accessibility": 83,
+      "seo": 100,
+      "bestPractices": 100
+    },
+    "grade": "B"
+  }
+}
