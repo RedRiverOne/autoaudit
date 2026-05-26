@@ -1,0 +1,173 @@
+name: Run Audit & Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'Target URL to audit'
+        required: true
+        default: 'https://dev.rrone.in/'
+      max_pages:
+        description: 'Max pages to audit'
+        required: false
+        default: '20'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          path: source
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        working-directory: source
+        run: pnpm install --frozen-lockfile || pnpm install
+
+      - name: Install Playwright + Chrome
+        working-directory: source
+        run: npx playwright install --with-deps chromium
+
+      - name: Run audit
+        working-directory: source
+        run: npx tsx src/cli.ts "${{ inputs.url }}" --max-pages ${{ inputs.max_pages }} --output ../audit-output
+        timeout-minutes: 15
+
+      - name: Prepare deployment
+        run: |
+          # Create audits directory if it doesn't exist
+          mkdir -p audits
+
+          # Find the new report files
+          REPORT_HTML=$(ls audit-output/audit-*.html 2>/dev/null | head -1)
+          REPORT_JSON=$(ls audit-output/audit-*.json 2>/dev/null | head -1)
+          REPORT_CLAUDE=$(ls audit-output/audit-*.claude.md 2>/dev/null | head -1)
+          TIMESTAMP=$(basename "$REPORT_HTML" .html | sed 's/audit-//')
+
+          # Create audit directory with timestamp
+          AUDIT_DIR="audits/${TIMESTAMP}"
+          mkdir -p "$AUDIT_DIR"
+
+          # Copy report files
+          cp "$REPORT_HTML" "$AUDIT_DIR/index.html"
+          [ -f "$REPORT_JSON" ] && cp "$REPORT_JSON" "$AUDIT_DIR/report.json"
+          [ -f "$REPORT_CLAUDE" ] && cp "$REPORT_CLAUDE" "$AUDIT_DIR/report.claude.md"
+
+          # Copy screenshots
+          if [ -d "audit-output/screenshots" ]; then
+            cp -r audit-output/screenshots "$AUDIT_DIR/"
+            # Fix screenshot paths in HTML (they reference relative to reports/ dir)
+            sed -i 's|screenshots/|./screenshots/|g' "$AUDIT_DIR/index.html"
+          fi
+
+          # Get sorted list of audits (newest first)
+          AUDITS=$(ls -d audits/*/ 2>/dev/null | sort -r)
+          AUDIT_COUNT=$(echo "$AUDITS" | wc -l)
+
+          # Keep only 5 most recent audits
+          if [ "$AUDIT_COUNT" -gt 5 ]; then
+            echo "$AUDITS" | tail -n +6 | while read dir; do
+              echo "Removing old audit: $dir"
+              rm -rf "$dir"
+            done
+          fi
+
+          # Generate index.html with audit history
+          LATEST_DIR=$(ls -d audits/*/ 2>/dev/null | sort -r | head -1)
+
+          cat > index.html << 'HEREDOC'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>AutoAudit — RedRiver Rent</title>
+          <style>
+          *{margin:0;padding:0;box-sizing:border-box}
+          body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6}
+          .container{max-width:800px;margin:0 auto;padding:3rem 1.5rem}
+          h1{font-size:1.75rem;font-weight:800;margin-bottom:.5rem}
+          .subtitle{color:#64748b;font-size:.9rem;margin-bottom:2rem}
+          .audit-list{list-style:none}
+          .audit-item{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:.75rem;display:flex;align-items:center;justify-content:space-between;transition:border-color .15s}
+          .audit-item:hover{border-color:#3b82f6}
+          .audit-item:first-child{border-color:#16a34a;border-width:2px}
+          .audit-date{font-weight:700;font-size:.9rem}
+          .audit-badge{font-size:.65rem;font-weight:700;color:#fff;background:#16a34a;padding:.125rem .5rem;border-radius:99px;margin-left:.5rem}
+          .audit-links{display:flex;gap:.75rem}
+          .audit-links a{font-size:.8rem;font-weight:600;color:#2563eb;text-decoration:none}
+          .audit-links a:hover{text-decoration:underline}
+          </style>
+          </head>
+          <body>
+          <div class="container">
+          <h1>AutoAudit Reports</h1>
+          <p class="subtitle">Automated website audit for RedRiver Rent</p>
+          <ul class="audit-list">
+          HEREDOC
+
+          FIRST=true
+          for dir in $(ls -d audits/*/ 2>/dev/null | sort -r | head -5); do
+            DIRNAME=$(basename "$dir")
+            # Parse timestamp for display
+            DISPLAY_DATE=$(echo "$DIRNAME" | sed 's/T/ /' | sed 's/-/:/4' | sed 's/-/:/4' | cut -c1-19 | sed 's/T/ /')
+
+            BADGE=""
+            if [ "$FIRST" = true ]; then
+              BADGE='<span class="audit-badge">LATEST</span>'
+              FIRST=false
+            fi
+
+            CLAUDE_LINK=""
+            if [ -f "$dir/report.claude.md" ]; then
+              CLAUDE_LINK="<a href=\"audits/${DIRNAME}/report.claude.md\">Claude File</a>"
+            fi
+
+            cat >> index.html << ITEM
+          <li class="audit-item">
+            <div><span class="audit-date">${DISPLAY_DATE}</span>${BADGE}</div>
+            <div class="audit-links">
+              <a href="audits/${DIRNAME}/">View Report</a>
+              ${CLAUDE_LINK}
+              <a href="audits/${DIRNAME}/report.json">JSON</a>
+            </div>
+          </li>
+          ITEM
+          done
+
+          cat >> index.html << 'HEREDOC'
+          </ul>
+          </div>
+          </body>
+          </html>
+          HEREDOC
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "audit: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push origin gh-pages
