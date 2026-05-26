@@ -11,38 +11,40 @@ export async function runVisualAudit(page: Page, device: string, pagePath: strin
 
   await page.screenshot({ path: screenshotPath, fullPage: true })
 
+  // Run all checks in a single evaluate — use arrow functions only to avoid __name issue
   const issues = await page.evaluate(() => {
     const found: { type: string; selector: string; description: string; severity: string }[] = []
     const vw = window.innerWidth
     const seen = new Set<string>()
 
-    function getSelector(el: Element): string {
+    const getSelector = (el: Element): string => {
       const tag = el.tagName.toLowerCase()
       if (el.id) return `${tag}#${el.id}`
       const cls = el.className ? String(el.className).split(' ').filter(c => c && !c.startsWith('svelte-'))[0] : ''
       return cls ? `${tag}.${cls}` : tag
     }
 
-    // Luminance calculation for contrast ratio
-    function srgbToLinear(c: number): number {
+    const srgbToLinear = (c: number): number => {
       c = c / 255
       return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4)
     }
-    function luminance(r: number, g: number, b: number): number {
-      return 0.2126 * srgbToLinear(r) + 0.7152 * srgbToLinear(g) + 0.0722 * srgbToLinear(b)
-    }
-    function parseColor(color: string): [number, number, number, number] | null {
+
+    const luminance = (r: number, g: number, b: number): number =>
+      0.2126 * srgbToLinear(r) + 0.7152 * srgbToLinear(g) + 0.0722 * srgbToLinear(b)
+
+    const parseColor = (color: string): [number, number, number, number] | null => {
       const m = color.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)/)
       if (!m) return null
       return [parseInt(m[1]), parseInt(m[2]), parseInt(m[3]), m[4] !== undefined ? parseFloat(m[4]) : 1]
     }
-    function contrastRatio(l1: number, l2: number): number {
+
+    const contrastRatio = (l1: number, l2: number): number => {
       const lighter = Math.max(l1, l2)
       const darker = Math.min(l1, l2)
       return (lighter + 0.05) / (darker + 0.05)
     }
 
-    // 1. Horizontal overflow (skip fixed/absolute positioned off-screen elements)
+    // 1. Horizontal overflow (skip fixed/absolute off-screen)
     document.querySelectorAll('*').forEach((el) => {
       const style = window.getComputedStyle(el)
       if (style.position === 'fixed' || style.position === 'absolute') return
@@ -61,31 +63,25 @@ export async function runVisualAudit(page: Page, device: string, pagePath: strin
       }
     })
 
-    // 2. Text color contrast check
-    const textEls = document.querySelectorAll('p, span, a, h1, h2, h3, h4, h5, h6, li, td, th, label, button, div')
-    textEls.forEach((el) => {
+    // 2. Text color contrast
+    document.querySelectorAll('p, span, a, h1, h2, h3, h4, h5, h6, li, td, th, label, button').forEach((el) => {
       const style = window.getComputedStyle(el)
       if (style.display === 'none' || style.visibility === 'hidden') return
       if (!el.textContent?.trim()) return
-      // Only check leaf text nodes
       if (el.children.length > 3) return
 
       const fgColor = parseColor(style.color)
-      const bgColor = parseColor(style.backgroundColor)
       if (!fgColor || fgColor[3] < 0.1) return
 
-      // Find effective background (walk up parents)
-      let bg = bgColor
-      if (!bg || bg[3] < 0.1) {
-        let parent = el.parentElement
-        while (parent) {
-          const ps = window.getComputedStyle(parent)
-          const pbg = parseColor(ps.backgroundColor)
-          if (pbg && pbg[3] > 0.1) { bg = pbg; break }
-          parent = parent.parentElement
-        }
+      let bg: [number, number, number, number] | null = null
+      let current: Element | null = el
+      while (current) {
+        const ps = window.getComputedStyle(current)
+        const pbg = parseColor(ps.backgroundColor)
+        if (pbg && pbg[3] > 0.1) { bg = pbg; break }
+        current = current.parentElement
       }
-      if (!bg || bg[3] < 0.1) bg = [255, 255, 255, 1] // assume white
+      if (!bg) bg = [255, 255, 255, 1]
 
       const fgL = luminance(fgColor[0], fgColor[1], fgColor[2])
       const bgL = luminance(bg[0], bg[1], bg[2])
