@@ -1,0 +1,2052 @@
+# AutoAudit Report — https://dev.rrone.in
+**Date:** 5/26/2026, 1:10:04 PM
+**Grade:** F | **Pages:** 20 | **Duration:** 322s
+**Lighthouse Avg:** Perf 23 | A11y 26 | SEO 28 | BP 30
+
+---
+
+## Broken Links (51)
+
+Fix these broken links in the codebase. Search for the link text or href to find the source.
+
+- **https://dev.rrone.in/dallas/** → 500 (http-error)
+  - Found on: `/` — link text: "DALLAS"
+- **https://dev.rrone.in/fort-worth/** → 500 (http-error)
+  - Found on: `/` — link text: "FORT WORTH"
+- **https://dev.rrone.in/san-antonio/** → 500 (http-error)
+  - Found on: `/` — link text: "SAN ANTONIO"
+- **https://dev.rrone.in/waco/** → 500 (http-error)
+  - Found on: `/` — link text: "WACO"
+- **https://dev.rrone.in/austin/** → 500 (http-error)
+  - Found on: `/` — link text: "AUSTIN"
+- **https://dev.rrone.in/houston/** → 500 (http-error)
+  - Found on: `/` — link text: "HOUSTON"
+- **https://dev.rrone.in/dallas/** → 500 (http-error)
+  - Found on: `/` — link text: "Dallas 0 listings →"
+- **https://dev.rrone.in/fort-worth/** → 500 (http-error)
+  - Found on: `/` — link text: "Fort Worth 0 listings →"
+- **https://dev.rrone.in/austin/** → 500 (http-error)
+  - Found on: `/` — link text: "Austin 0 listings →"
+- **https://dev.rrone.in/houston/** → 500 (http-error)
+  - Found on: `/` — link text: "Houston 0 listings →"
+- **https://dev.rrone.in/san-antonio/** → 500 (http-error)
+  - Found on: `/` — link text: "San Antonio 0 listings →"
+- **https://dev.rrone.in/dallas/** → 500 (http-error)
+  - Found on: `/` — link text: "Dallas 0 listings →"
+- **https://dev.rrone.in/fort-worth/** → 500 (http-error)
+  - Found on: `/` — link text: "Fort Worth 0 listings →"
+- **https://dev.rrone.in/austin/** → 500 (http-error)
+  - Found on: `/` — link text: "Austin 0 listings →"
+- **https://dev.rrone.in/houston/** → 500 (http-error)
+  - Found on: `/` — link text: "Houston 0 listings →"
+- **https://dev.rrone.in/san-antonio/** → 500 (http-error)
+  - Found on: `/` — link text: "San Antonio 0 listings →"
+- **https://dev.rrone.in/dallas/** → 500 (http-error)
+  - Found on: `/` — link text: "Dallas 0 listings →"
+- **https://dev.rrone.in/fort-worth/** → 500 (http-error)
+  - Found on: `/` — link text: "Fort Worth 0 listings →"
+- **https://dev.rrone.in/austin/** → 500 (http-error)
+  - Found on: `/` — link text: "Austin 0 listings →"
+- **https://dev.rrone.in/houston/** → 500 (http-error)
+  - Found on: `/` — link text: "Houston 0 listings →"
+- **https://dev.rrone.in/san-antonio/** → 500 (http-error)
+  - Found on: `/` — link text: "San Antonio 0 listings →"
+- **https://dev.rrone.in/dallas/** → 500 (http-error)
+  - Found on: `/about` — link text: "DALLAS"
+- **https://dev.rrone.in/fort-worth/** → 500 (http-error)
+  - Found on: `/about` — link text: "FORT WORTH"
+- **https://dev.rrone.in/austin/** → 500 (http-error)
+  - Found on: `/about` — link text: "AUSTIN"
+- **https://dev.rrone.in/waco/** → 500 (http-error)
+  - Found on: `/about` — link text: "WACO"
+- **https://dev.rrone.in/san-antonio/** → 500 (http-error)
+  - Found on: `/about` — link text: "SAN ANTONIO"
+- **https://dev.rrone.in/houston/** → 500 (http-error)
+  - Found on: `/about` — link text: "HOUSTON"
+- **https://dev.rrone.in/dallas/** → 500 (http-error)
+  - Found on: `/blog` — link text: "DALLAS"
+- **https://dev.rrone.in/fort-worth/** → 500 (http-error)
+  - Found on: `/blog` — link text: "FORT WORTH"
+- **https://dev.rrone.in/austin/** → 500 (http-error)
+  - Found on: `/blog` — link text: "AUSTIN"
+- **https://dev.rrone.in/waco/** → 500 (http-error)
+  - Found on: `/blog` — link text: "WACO"
+- **https://dev.rrone.in/san-antonio/** → 500 (http-error)
+  - Found on: `/blog` — link text: "SAN ANTONIO"
+- **https://dev.rrone.in/houston/** → 500 (http-error)
+  - Found on: `/blog` — link text: "HOUSTON"
+- **https://dev.rrone.in/dallas/** → 500 (http-error)
+  - Found on: `/compare` — link text: "DALLAS"
+- **https://dev.rrone.in/fort-worth/** → 500 (http-error)
+  - Found on: `/compare` — link text: "FORT WORTH"
+- **https://dev.rrone.in/austin/** → 500 (http-error)
+  - Found on: `/compare` — link text: "AUSTIN"
+- **https://dev.rrone.in/waco/** → 500 (http-error)
+  - Found on: `/compare` — link text: "WACO"
+- **https://dev.rrone.in/san-antonio/** → 500 (http-error)
+  - Found on: `/compare` — link text: "SAN ANTONIO"
+- **https://dev.rrone.in/houston/** → 500 (http-error)
+  - Found on: `/compare` — link text: "HOUSTON"
+- **https://dev.rrone.in/dallas/** → 500 (http-error)
+  - Found on: `/contact` — link text: "DALLAS"
+- **https://dev.rrone.in/fort-worth/** → 500 (http-error)
+  - Found on: `/contact` — link text: "FORT WORTH"
+- **https://dev.rrone.in/austin/** → 500 (http-error)
+  - Found on: `/contact` — link text: "AUSTIN"
+- **https://dev.rrone.in/waco/** → 500 (http-error)
+  - Found on: `/contact` — link text: "WACO"
+- **https://dev.rrone.in/san-antonio/** → 500 (http-error)
+  - Found on: `/contact` — link text: "SAN ANTONIO"
+- **https://dev.rrone.in/houston/** → 500 (http-error)
+  - Found on: `/contact` — link text: "HOUSTON"
+- **https://dev.rrone.in/dallas/** → 500 (http-error)
+  - Found on: `/cookies` — link text: "DALLAS"
+- **https://dev.rrone.in/fort-worth/** → 500 (http-error)
+  - Found on: `/cookies` — link text: "FORT WORTH"
+- **https://dev.rrone.in/austin/** → 500 (http-error)
+  - Found on: `/cookies` — link text: "AUSTIN"
+- **https://dev.rrone.in/waco/** → 500 (http-error)
+  - Found on: `/cookies` — link text: "WACO"
+- **https://dev.rrone.in/san-antonio/** → 500 (http-error)
+  - Found on: `/cookies` — link text: "SAN ANTONIO"
+- **https://dev.rrone.in/houston/** → 500 (http-error)
+  - Found on: `/cookies` — link text: "HOUSTON"
+
+## Security Issues (6)
+
+### [MEDIUM] missing-header
+- **Issue:** Missing security header: strict-transport-security
+- **URL:** `https://dev.rrone.in`
+- **Fix:** Add strict-transport-security response header
+- **Where to fix:** Add the header in the server configuration or SvelteKit hooks (`src/hooks.server.ts`). Example:
+  ```typescript
+  response.headers.set('strict-transport-security', 'value-here')
+  ```
+
+### [HIGH] missing-header
+- **Issue:** Missing security header: content-security-policy
+- **URL:** `https://dev.rrone.in`
+- **Fix:** Add content-security-policy response header
+- **Where to fix:** Add the header in the server configuration or SvelteKit hooks (`src/hooks.server.ts`). Example:
+  ```typescript
+  response.headers.set('content-security-policy', 'value-here')
+  ```
+
+### [MEDIUM] missing-header
+- **Issue:** Missing security header: x-content-type-options
+- **URL:** `https://dev.rrone.in`
+- **Fix:** Add x-content-type-options response header
+- **Where to fix:** Add the header in the server configuration or SvelteKit hooks (`src/hooks.server.ts`). Example:
+  ```typescript
+  response.headers.set('x-content-type-options', 'value-here')
+  ```
+
+### [MEDIUM] missing-header
+- **Issue:** Missing security header: x-frame-options
+- **URL:** `https://dev.rrone.in`
+- **Fix:** Add x-frame-options response header
+- **Where to fix:** Add the header in the server configuration or SvelteKit hooks (`src/hooks.server.ts`). Example:
+  ```typescript
+  response.headers.set('x-frame-options', 'value-here')
+  ```
+
+### [MEDIUM] missing-header
+- **Issue:** Missing security header: referrer-policy
+- **URL:** `https://dev.rrone.in`
+- **Fix:** Add referrer-policy response header
+- **Where to fix:** Add the header in the server configuration or SvelteKit hooks (`src/hooks.server.ts`). Example:
+  ```typescript
+  response.headers.set('referrer-policy', 'value-here')
+  ```
+
+### [MEDIUM] missing-header
+- **Issue:** Missing security header: permissions-policy
+- **URL:** `https://dev.rrone.in`
+- **Fix:** Add permissions-policy response header
+- **Where to fix:** Add the header in the server configuration or SvelteKit hooks (`src/hooks.server.ts`). Example:
+  ```typescript
+  response.headers.set('permissions-policy', 'value-here')
+  ```
+
+## Accessibility Violations (212 total, 7 unique rules)
+
+These are grouped by rule. Fix the rule once and it resolves across all pages.
+
+### [CRITICAL] button-name
+- **What:** Ensure buttons have discernible text
+- **Affected elements:** `.prop-card--platinum > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn`, `.md\:w-\[calc\(50\%_-_0\.75rem\)\].lg\:w-\[calc\(25\%_-_1\.125rem\)\].w-full:nth-child(2) > article > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn`, `.md\:w-\[calc\(50\%_-_0\.75rem\)\].lg\:w-\[calc\(25\%_-_1\.125rem\)\].w-full:nth-child(3) > article > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn`, `.md\:w-\[calc\(50\%_-_0\.75rem\)\].lg\:w-\[calc\(25\%_-_1\.125rem\)\].w-full:nth-child(4) > article > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn`, `.md\:w-\[calc\(50\%_-_0\.75rem\)\].lg\:w-\[calc\(25\%_-_1\.125rem\)\].w-full:nth-child(5) > article > .prop-icons-area.svelte-1fplyk9 > .prop-icon-btn` +1 more
+- **Pages:** / (Desktop), / (Mobile), / (Tablet), /about (Mobile), /about (Tablet) +36 more
+- **Learn more:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+
+### [CRITICAL] select-name
+- **What:** Ensure select element has an accessible name
+- **Affected elements:** `.filter-field.svelte-1w0s7vk:nth-child(3) > .select-wrap.svelte-1w0s7vk > .filter-select`, `.filter-field.svelte-1w0s7vk:nth-child(5) > .select-wrap.svelte-1w0s7vk > .filter-select`, `.select-wrap.svelte-1w0s7vk:nth-child(1) > .mobile-filter-select`, `.select-wrap.svelte-1w0s7vk:nth-child(2) > .mobile-filter-select`
+- **Pages:** / (Desktop), / (Mobile), / (Tablet)
+- **Learn more:** https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright
+
+### [SERIOUS] color-contrast
+- **What:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Affected elements:** `.shadow-\[0px_8px_20px_rgba\(198\,90\,58\,0\.2\)\]`, `.search-btn`, `.advisor-cta-link`, `.stat-block.svelte-1w0s7vk:nth-child(1) > .stat-label.svelte-1w0s7vk`, `.stat-block.svelte-1w0s7vk:nth-child(2) > .stat-label.svelte-1w0s7vk` +18 more
+- **Pages:** / (Desktop), / (Mobile), / (Tablet), /about (Desktop), /about (Mobile) +55 more
+- **Learn more:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+
+### [SERIOUS] document-title
+- **What:** Ensure each HTML document contains a non-empty <title> element
+- **Affected elements:** `html`
+- **Pages:** /austin (Desktop), /austin (Mobile), /austin (Tablet), /austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft (Desktop), /austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft (Mobile) +37 more
+- **Learn more:** https://dequeuniversity.com/rules/axe/4.11/document-title?application=playwright
+
+### [MODERATE] heading-order
+- **What:** Ensure the order of headings is semantically correct
+- **Affected elements:** `.mt-6.hover\:shadow-\[0px_15px_40px_rgba\(0\,0\,0\,0\.06\)\].p-10:nth-child(1) > .gap-4.flex-col.flex > div > h4`, `.cursor-pointer.p-5.rounded-\[16px\]:nth-child(1) > .svelte-jz8lnl:nth-child(2) > .mb-1`, `.cursor-pointer.rounded-\[16px\].group:nth-child(1) > div:nth-child(2) > h4`, `.cursor-pointer.rounded-\[16px\].p-5:nth-child(1) > div:nth-child(2) > h4`, `.p-5.items-start.gap-4:nth-child(1) > div:nth-child(2) > h3`
+- **Pages:** / (Desktop), / (Mobile), / (Tablet), /about (Desktop), /about (Mobile) +55 more
+- **Learn more:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+
+### [MODERATE] landmark-one-main
+- **What:** Ensure the document has a main landmark
+- **Affected elements:** `html`
+- **Pages:** /compare (Desktop), /compare (Mobile), /compare (Tablet)
+- **Learn more:** https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright
+
+### [MODERATE] region
+- **What:** Ensure all page content is contained by landmarks
+- **Affected elements:** `h1`, `.gap-2.items-center.flex > .text-\[var\(--c-fg-subtle\)\]`, `.ml-auto`, `.min-h-\[60vh\] > h2`, `.max-w-xs` +1 more
+- **Pages:** /compare (Desktop), /compare (Mobile), /compare (Tablet)
+- **Learn more:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+
+## Visual Issues (600)
+
+- **overflow** on `/` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/about` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/blog` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/compare` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/contact` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/cookies` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a1` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a2` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a3` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a4` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a5` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Desktop): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Desktop): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Desktop): `div.svelte-k6vov3`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Desktop): `h2.text-lg`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Desktop): `p.mt-0.5`
+  - Element extends 232px beyond viewport (208px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Desktop): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Desktop): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Desktop): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Desktop): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Desktop): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Mobile): `div.fixed`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Mobile): `div.flex`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Mobile): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Mobile): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Mobile): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Mobile): `button.flex`
+  - Element extends 366px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Mobile): `svg.[object`
+  - Element extends 357px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Mobile): `path.[object`
+  - Element extends 353px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Mobile): `div.shrink-0`
+  - Element extends 390px beyond viewport (390px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Mobile): `button.flex-1`
+  - Element extends 189px beyond viewport (161px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Tablet): `div.fixed`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Tablet): `div.flex`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Tablet): `div.svelte-k6vov3`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Tablet): `h2.text-lg`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Tablet): `p.mt-0.5`
+  - Element extends 238px beyond viewport (214px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Tablet): `button.flex`
+  - Element extends 436px beyond viewport (36px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Tablet): `svg.[object`
+  - Element extends 427px beyond viewport (18px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Tablet): `path.[object`
+  - Element extends 423px beyond viewport (9px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Tablet): `div.shrink-0`
+  - Element extends 460px beyond viewport (460px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+- **overflow** on `/dallas/l/delante-apartments-las-colinas-a6` (Tablet): `button.flex-1`
+  - Element extends 224px beyond viewport (196px wide)
+  - Fix: Add `max-width: 100%` or `overflow-x: hidden` to the element or its container.
+
+## Lighthouse Scores
+
+| Page | Performance | Accessibility | SEO | Best Practices |
+|------|------------|---------------|-----|----------------|
+| `/` | 40 | 83 | 100 | 100 |
+| `/about` | 80 | 86 | 100 | 100 |
+| `/austin` | 0 | 0 | 0 | 0 |
+| `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft` | 0 | 0 | 0 | 0 |
+| `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2` | 0 | 0 | 0 | 0 |
+| `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3` | 0 | 0 | 0 | 0 |
+| `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4` | 0 | 0 | 0 | 0 |
+| `/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5` | 0 | 0 | 0 | 0 |
+| `/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft` | 0 | 0 | 0 | 0 |
+| `/blog` | 80 | 86 | 100 | 100 |
+| `/compare` | 79 | 86 | 54 | 100 |
+| `/contact` | 94 | 87 | 100 | 100 |
+| `/cookies` | 77 | 88 | 100 | 100 |
+| `/dallas` | 0 | 0 | 0 | 0 |
+| `/dallas/l/delante-apartments-las-colinas-a1` | 0 | 0 | 0 | 0 |
+| `/dallas/l/delante-apartments-las-colinas-a2` | 0 | 0 | 0 | 0 |
+| `/dallas/l/delante-apartments-las-colinas-a3` | 0 | 0 | 0 | 0 |
+| `/dallas/l/delante-apartments-las-colinas-a4` | 0 | 0 | 0 | 0 |
+| `/dallas/l/delante-apartments-las-colinas-a5` | 0 | 0 | 0 | 0 |
+| `/dallas/l/delante-apartments-las-colinas-a6` | 0 | 0 | 0 | 0 |
+
+---
+
+## Priority Fix Order
+
+1. Fix 51 broken links
+- Fix 4 critical/serious accessibility rules: button-name, color-contrast, select-name, document-title
+- Add missing security headers in hooks.server.ts
+- Fix 600 visual overflow issues
