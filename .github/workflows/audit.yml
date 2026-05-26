@@ -21,7 +21,7 @@ jobs:
   audit:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout gh-pages
         uses: actions/checkout@v4
         with:
           ref: gh-pages
@@ -56,47 +56,35 @@ jobs:
 
       - name: Prepare deployment
         run: |
-          # Create audits directory if it doesn't exist
           mkdir -p audits
 
-          # Find the new report files
           REPORT_HTML=$(ls audit-output/audit-*.html 2>/dev/null | head -1)
-          REPORT_JSON=$(ls audit-output/audit-*.json 2>/dev/null | head -1)
-          REPORT_CLAUDE=$(ls audit-output/audit-*.claude.md 2>/dev/null | head -1)
-          TIMESTAMP=$(basename "$REPORT_HTML" .html | sed 's/audit-//')
+          if [ -z "$REPORT_HTML" ]; then echo "No report generated"; exit 1; fi
 
-          # Create audit directory with timestamp
+          TIMESTAMP=$(basename "$REPORT_HTML" .html | sed 's/audit-//')
           AUDIT_DIR="audits/${TIMESTAMP}"
           mkdir -p "$AUDIT_DIR"
 
-          # Copy report files
+          # Copy only HTML report
           cp "$REPORT_HTML" "$AUDIT_DIR/index.html"
-          [ -f "$REPORT_JSON" ] && cp "$REPORT_JSON" "$AUDIT_DIR/report.json"
-          [ -f "$REPORT_CLAUDE" ] && cp "$REPORT_CLAUDE" "$AUDIT_DIR/report.claude.md"
 
           # Copy screenshots
           if [ -d "audit-output/screenshots" ]; then
             cp -r audit-output/screenshots "$AUDIT_DIR/"
-            # Fix screenshot paths in HTML (they reference relative to reports/ dir)
             sed -i 's|screenshots/|./screenshots/|g' "$AUDIT_DIR/index.html"
           fi
 
-          # Get sorted list of audits (newest first)
-          AUDITS=$(ls -d audits/*/ 2>/dev/null | sort -r)
-          AUDIT_COUNT=$(echo "$AUDITS" | wc -l)
-
           # Keep only 5 most recent audits
+          AUDIT_COUNT=$(ls -d audits/*/ 2>/dev/null | wc -l)
           if [ "$AUDIT_COUNT" -gt 5 ]; then
-            echo "$AUDITS" | tail -n +6 | while read dir; do
+            ls -d audits/*/ | sort -r | tail -n +6 | while read dir; do
               echo "Removing old audit: $dir"
               rm -rf "$dir"
             done
           fi
 
-          # Generate index.html with audit history
-          LATEST_DIR=$(ls -d audits/*/ 2>/dev/null | sort -r | head -1)
-
-          cat > index.html << 'HEREDOC'
+          # Generate index.html
+          cat > index.html << 'HTMLHEAD'
           <!DOCTYPE html>
           <html lang="en">
           <head>
@@ -105,33 +93,38 @@ jobs:
           <title>AutoAudit — RedRiver Rent</title>
           <style>
           *{margin:0;padding:0;box-sizing:border-box}
-          body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6}
-          .container{max-width:800px;margin:0 auto;padding:3rem 1.5rem}
-          h1{font-size:1.75rem;font-weight:800;margin-bottom:.5rem}
-          .subtitle{color:#64748b;font-size:.9rem;margin-bottom:2rem}
+          body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh}
+          .container{max-width:700px;margin:0 auto;padding:3rem 1.5rem}
+          h1{font-size:1.75rem;font-weight:800;color:#fff;margin-bottom:.25rem}
+          .subtitle{color:#94a3b8;font-size:.85rem;margin-bottom:2.5rem}
           .audit-list{list-style:none}
-          .audit-item{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:.75rem;display:flex;align-items:center;justify-content:space-between;transition:border-color .15s}
+          .audit-item{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:1.25rem 1.5rem;margin-bottom:.75rem;transition:border-color .15s}
           .audit-item:hover{border-color:#3b82f6}
           .audit-item:first-child{border-color:#16a34a;border-width:2px}
-          .audit-date{font-weight:700;font-size:.9rem}
-          .audit-badge{font-size:.65rem;font-weight:700;color:#fff;background:#16a34a;padding:.125rem .5rem;border-radius:99px;margin-left:.5rem}
-          .audit-links{display:flex;gap:.75rem}
-          .audit-links a{font-size:.8rem;font-weight:600;color:#2563eb;text-decoration:none}
-          .audit-links a:hover{text-decoration:underline}
+          .audit-row{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+          .audit-info{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
+          .audit-date{font-weight:700;font-size:.9rem;color:#f1f5f9}
+          .audit-time{font-size:.75rem;color:#64748b;font-family:monospace}
+          .audit-badge{font-size:.6rem;font-weight:700;color:#fff;background:#16a34a;padding:.2rem .6rem;border-radius:99px}
+          .view-btn{display:inline-flex;align-items:center;gap:.375rem;background:#3b82f6;color:#fff;padding:.5rem 1.25rem;border-radius:8px;font-size:.8rem;font-weight:700;text-decoration:none;transition:background .15s}
+          .view-btn:hover{background:#2563eb}
+          .footer{text-align:center;margin-top:3rem;font-size:.7rem;color:#475569}
           </style>
           </head>
           <body>
           <div class="container">
           <h1>AutoAudit Reports</h1>
-          <p class="subtitle">Automated website audit for RedRiver Rent</p>
+          <p class="subtitle">Automated website audits for RedRiver Rent — last 5 runs</p>
           <ul class="audit-list">
-          HEREDOC
+          HTMLHEAD
 
           FIRST=true
           for dir in $(ls -d audits/*/ 2>/dev/null | sort -r | head -5); do
             DIRNAME=$(basename "$dir")
-            # Parse timestamp for display
-            DISPLAY_DATE=$(echo "$DIRNAME" | sed 's/T/ /' | sed 's/-/:/4' | sed 's/-/:/4' | cut -c1-19 | sed 's/T/ /')
+            # Parse timestamp: 2026-05-26T13-25-53-707Z → 2026-05-26 13:25:53 UTC
+            DATE_PART=$(echo "$DIRNAME" | cut -dT -f1)
+            TIME_RAW=$(echo "$DIRNAME" | cut -dT -f2 | sed 's/-[^-]*Z$//' | sed 's/-/:/g')
+            DISPLAY="${DATE_PART} ${TIME_RAW} UTC"
 
             BADGE=""
             if [ "$FIRST" = true ]; then
@@ -139,33 +132,30 @@ jobs:
               FIRST=false
             fi
 
-            CLAUDE_LINK=""
-            if [ -f "$dir/report.claude.md" ]; then
-              CLAUDE_LINK="<a href=\"audits/${DIRNAME}/report.claude.md\">Claude File</a>"
-            fi
-
             cat >> index.html << ITEM
           <li class="audit-item">
-            <div><span class="audit-date">${DISPLAY_DATE}</span>${BADGE}</div>
-            <div class="audit-links">
-              <a href="audits/${DIRNAME}/">View Report</a>
-              ${CLAUDE_LINK}
-              <a href="audits/${DIRNAME}/report.json">JSON</a>
+            <div class="audit-row">
+              <div class="audit-info">
+                <span class="audit-date">${DATE_PART}</span>
+                <span class="audit-time">${TIME_RAW} UTC</span>
+                ${BADGE}
+              </div>
+              <a class="view-btn" href="audits/${DIRNAME}/">View Report →</a>
             </div>
           </li>
           ITEM
           done
 
-          cat >> index.html << 'HEREDOC'
+          cat >> index.html << 'HTMLFOOT'
           </ul>
+          <p class="footer">Run a new audit from <a href="https://github.com/RedRiverOne/autoaudit/actions/workflows/audit.yml" style="color:#3b82f6">GitHub Actions</a></p>
           </div>
           </body>
           </html>
-          HEREDOC
+          HTMLFOOT
 
       - name: Deploy to GitHub Pages
         run: |
-          # Clean up build artifacts that shouldn't be committed
           rm -rf source audit-output
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
