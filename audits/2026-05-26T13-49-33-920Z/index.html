@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AutoAudit Report — https://dev.rrone.in</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6;font-size:14px}
+.container{max-width:1200px;margin:0 auto;padding:2rem 1.5rem}
+h1{font-size:1.75rem;font-weight:800}
+h2{font-size:1.25rem;font-weight:700;margin:2.5rem 0 1rem;padding-bottom:.5rem;border-bottom:2px solid #e2e8f0}
+h3{font-size:1.05rem;font-weight:700;margin:1rem 0 .5rem}
+h4{font-size:.9rem;font-weight:700;margin:.75rem 0 .5rem;display:flex;align-items:center;gap:.5rem}
+h5{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#64748b;margin:.75rem 0 .375rem}
+.meta{font-size:.8rem;color:#64748b;margin-bottom:2rem}
+.dashboard{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.75rem;margin-bottom:2rem}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:1.25rem;text-align:center}
+.card-value{font-size:2rem;font-weight:800;line-height:1}
+.card-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#64748b;margin-top:.375rem}
+.badge{display:inline-block;padding:.125rem .5rem;border-radius:99px;font-size:.6rem;font-weight:700;color:#fff;vertical-align:middle}
+.issue-detail-card{background:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:.875rem 1rem;margin-bottom:.625rem}
+.issue-header{font-weight:600;font-size:.85rem;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
+.issue-explanation{font-size:.8rem;color:#475569;line-height:1.7}
+.issue-explanation code{background:#f1f5f9;padding:.1rem .375rem;border-radius:4px;font-size:.75rem;font-family:'SF Mono',Monaco,Consolas,monospace;word-break:break-all}
+.issue-explanation strong{color:#1e293b}
+.issue-explanation a{color:#2563eb;text-decoration:none}
+.issue-explanation a:hover{text-decoration:underline}
+.pass{font-size:.8rem;color:#16a34a;padding:.5rem 0;font-weight:500}
+.pass-badge{font-size:.65rem;font-weight:700;color:#16a34a;background:#f0fdf4;border:1px solid #bbf7d0;padding:.125rem .5rem;border-radius:99px}
+.issue-count{font-size:.65rem;font-weight:700;color:#dc2626;background:#fef2f2;border:1px solid #fecaca;padding:.125rem .5rem;border-radius:99px}
+.page-details{border:1px solid #e2e8f0;border-radius:10px;margin-bottom:.75rem;background:#fff;overflow:hidden}
+.page-details[open]{border-color:#cbd5e1}
+.page-details summary{padding:.875rem 1.25rem;cursor:pointer;display:flex;align-items:center;gap:.75rem;font-size:.9rem;font-weight:600;background:#fafbfc;border-bottom:1px solid transparent;user-select:none}
+.page-details[open] summary{border-bottom-color:#e2e8f0;background:#f1f5f9}
+.page-details summary:hover{background:#f1f5f9}
+.page-path{flex:1;font-family:'SF Mono',Monaco,Consolas,monospace;font-size:.8rem}
+.page-status{font-size:.65rem;font-weight:700;padding:.125rem .375rem;border-radius:4px}
+.status-ok{color:#16a34a;background:#f0fdf4}
+.status-error{color:#dc2626;background:#fef2f2}
+.lh-mini{font-size:.65rem;color:#64748b;font-weight:500;font-family:'SF Mono',Monaco,Consolas,monospace}
+.page-content{padding:1.25rem}
+.device-section{margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid #f1f5f9}
+.device-section:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.load-time{font-size:.7rem;font-weight:500;color:#64748b;font-family:monospace}
+.screenshot-wrap{margin:.75rem 0;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden}
+.screenshot-wrap img{width:100%;max-height:400px;object-fit:cover;object-position:top;display:block}
+.subsection{margin:.75rem 0}
+.lighthouse-row{display:flex;gap:1.5rem;padding:1rem 0;margin-bottom:1rem;border-bottom:1px solid #f1f5f9}
+.lh-score{text-align:center}
+.lh-num{font-size:1.75rem;font-weight:800;display:block}
+.lh-label{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#64748b}
+table{width:100%;border-collapse:collapse;font-size:.8rem;margin:.5rem 0}
+th,td{padding:.5rem .75rem;text-align:left;border-bottom:1px solid #e2e8f0}
+th{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#64748b;background:#f8fafc}
+.empty{text-align:center;padding:2rem;color:#94a3b8;font-size:.85rem}
+@media(max-width:768px){.dashboard{grid-template-columns:repeat(3,1fr)}.lighthouse-row{flex-wrap:wrap;gap:.75rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>AutoAudit Report</h1>
+<div class="meta">https://dev.rrone.in &middot; 5/26/2026, 1:49:33 PM &middot; 341s &middot; 15 pages &middot; 3 devices</div>
+
+<div class="dashboard">
+  <div class="card"><div class="card-value" style="color:#d97706">C</div><div class="card-label">Grade</div></div>
+  <div class="card"><div class="card-value" style="color:#d97706">58</div><div class="card-label">Performance</div></div>
+  <div class="card"><div class="card-value" style="color:#d97706">77</div><div class="card-label">Accessibility</div></div>
+  <div class="card"><div class="card-value" style="color:#d97706">87</div><div class="card-label">SEO</div></div>
+  <div class="card"><div class="card-value">103</div><div class="card-label">Broken Links</div></div>
+  <div class="card"><div class="card-value" style="color:#dc2626">2</div><div class="card-label">Security</div></div>
+  <div class="card"><div class="card-value" style="color:#16a34a">0</div><div class="card-label">A11y Issues</div></div>
+</div>
+
+<h2>Page-by-Page Audit</h2>
+<p style="font-size:.8rem;color:#64748b;margin-bottom:1rem">Click any page to expand and see detailed issues per device with screenshots, explanations, and fix suggestions.</p>
+
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:52 A:86 S:100</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">52</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">86</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/about</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:65 A:86 S:100</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">65</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">86</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/austin</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:0 A:0 S:0</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#dc2626"><span class="lh-num">0</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#dc2626"><span class="lh-num">0</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#dc2626"><span class="lh-num">0</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#dc2626"><span class="lh-num">0</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:68 A:90 S:100</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">68</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">90</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:68 A:90 S:100</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">68</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">90</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:67 A:90 S:100</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">67</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">90</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:68 A:90 S:100</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">68</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">90</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:68 A:90 S:100</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">68</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">90</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:69 A:90 S:100</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">69</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">90</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/blog</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:65 A:86 S:100</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">65</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">86</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/cedar-park</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:0 A:0 S:0</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#dc2626"><span class="lh-num">0</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#dc2626"><span class="lh-num">0</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#dc2626"><span class="lh-num">0</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#dc2626"><span class="lh-num">0</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/cedar-park/l/emerald-townhome</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:71 A:90 S:100</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">71</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">90</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/cedar-park/l/lapis</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:71 A:90 S:100</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">71</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">90</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/cedar-park/l/onyx</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:71 A:90 S:100</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">71</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">90</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+    <details class="page-details" >
+      <summary>
+        <span class="page-path">/cedar-park/l/sapphire-townhome</span>
+        <span class="page-status status-ok">200</span>
+        <span class="pass-badge">PASS</span>
+        <span class="lh-mini">P:72 A:90 S:100</span>
+      </summary>
+      <div class="page-content">
+        
+        <div class="lighthouse-row">
+          <div class="lh-score" style="color:#d97706"><span class="lh-num">72</span><span class="lh-label">Performance</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">90</span><span class="lh-label">Accessibility</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">SEO</span></div>
+          <div class="lh-score" style="color:#16a34a"><span class="lh-num">100</span><span class="lh-label">Best Practices</span></div>
+        </div>
+        
+      <div class="device-section">
+        <h4>Desktop <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Mobile <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      <div class="device-section">
+        <h4>Tablet <span class="load-time">0ms</span></h4>
+        
+
+        <div class="pass">No visual issues</div>
+
+        <div class="pass">No accessibility violations (0 rules passed)</div>
+      </div>
+      </div>
+    </details>
+
+
+<h2>Broken Links (103)</h2>
+<table>
+<thead><tr><th>Target URL</th><th>Status</th><th>Type</th><th>Found On</th><th>Link Text</th></tr></thead>
+<tbody>
+<tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">DALLAS</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">FORT WORTH</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">SAN ANTONIO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">AUSTIN</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/waco/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">WACO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">HOUSTON</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">Dallas 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">Fort Worth 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">Austin 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">Houston 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">San Antonio 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">Dallas 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">Fort Worth 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">Austin 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">Houston 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">San Antonio 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">Dallas 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">Fort Worth 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">Austin 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">Houston 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/</td>
+  <td style="font-size:.75rem">San Antonio 0 listings →</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/about</td>
+  <td style="font-size:.75rem">DALLAS</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/about</td>
+  <td style="font-size:.75rem">FORT WORTH</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/about</td>
+  <td style="font-size:.75rem">AUSTIN</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/waco/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/about</td>
+  <td style="font-size:.75rem">WACO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/about</td>
+  <td style="font-size:.75rem">SAN ANTONIO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/about</td>
+  <td style="font-size:.75rem">HOUSTON</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft</td>
+  <td style="font-size:.75rem">DALLAS</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft</td>
+  <td style="font-size:.75rem">FORT WORTH</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft</td>
+  <td style="font-size:.75rem">AUSTIN</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/waco/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft</td>
+  <td style="font-size:.75rem">WACO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft</td>
+  <td style="font-size:.75rem">SAN ANTONIO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft</td>
+  <td style="font-size:.75rem">HOUSTON</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft</td>
+  <td style="font-size:.75rem">Austin</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2</td>
+  <td style="font-size:.75rem">DALLAS</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2</td>
+  <td style="font-size:.75rem">FORT WORTH</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2</td>
+  <td style="font-size:.75rem">AUSTIN</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/waco/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2</td>
+  <td style="font-size:.75rem">WACO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2</td>
+  <td style="font-size:.75rem">SAN ANTONIO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2</td>
+  <td style="font-size:.75rem">HOUSTON</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-2</td>
+  <td style="font-size:.75rem">Austin</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3</td>
+  <td style="font-size:.75rem">DALLAS</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3</td>
+  <td style="font-size:.75rem">FORT WORTH</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3</td>
+  <td style="font-size:.75rem">AUSTIN</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/waco/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3</td>
+  <td style="font-size:.75rem">WACO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3</td>
+  <td style="font-size:.75rem">SAN ANTONIO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3</td>
+  <td style="font-size:.75rem">HOUSTON</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-3</td>
+  <td style="font-size:.75rem">Austin</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4</td>
+  <td style="font-size:.75rem">DALLAS</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4</td>
+  <td style="font-size:.75rem">FORT WORTH</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4</td>
+  <td style="font-size:.75rem">AUSTIN</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/waco/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4</td>
+  <td style="font-size:.75rem">WACO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4</td>
+  <td style="font-size:.75rem">SAN ANTONIO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4</td>
+  <td style="font-size:.75rem">HOUSTON</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-4</td>
+  <td style="font-size:.75rem">Austin</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5</td>
+  <td style="font-size:.75rem">DALLAS</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5</td>
+  <td style="font-size:.75rem">FORT WORTH</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5</td>
+  <td style="font-size:.75rem">AUSTIN</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/waco/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5</td>
+  <td style="font-size:.75rem">WACO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5</td>
+  <td style="font-size:.75rem">SAN ANTONIO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5</td>
+  <td style="font-size:.75rem">HOUSTON</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed-1-bath-652-685-sq-ft-5</td>
+  <td style="font-size:.75rem">Austin</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft</td>
+  <td style="font-size:.75rem">DALLAS</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft</td>
+  <td style="font-size:.75rem">FORT WORTH</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft</td>
+  <td style="font-size:.75rem">AUSTIN</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/waco/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft</td>
+  <td style="font-size:.75rem">WACO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft</td>
+  <td style="font-size:.75rem">SAN ANTONIO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft</td>
+  <td style="font-size:.75rem">HOUSTON</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/austin/l/the-gabriel-1-bed1-bath-652-685-sq-ft</td>
+  <td style="font-size:.75rem">Austin</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/blog</td>
+  <td style="font-size:.75rem">DALLAS</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/blog</td>
+  <td style="font-size:.75rem">FORT WORTH</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/blog</td>
+  <td style="font-size:.75rem">AUSTIN</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/waco/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/blog</td>
+  <td style="font-size:.75rem">WACO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/blog</td>
+  <td style="font-size:.75rem">SAN ANTONIO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/blog</td>
+  <td style="font-size:.75rem">HOUSTON</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/emerald-townhome</td>
+  <td style="font-size:.75rem">DALLAS</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/emerald-townhome</td>
+  <td style="font-size:.75rem">FORT WORTH</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/emerald-townhome</td>
+  <td style="font-size:.75rem">AUSTIN</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/waco/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/emerald-townhome</td>
+  <td style="font-size:.75rem">WACO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/emerald-townhome</td>
+  <td style="font-size:.75rem">SAN ANTONIO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/emerald-townhome</td>
+  <td style="font-size:.75rem">HOUSTON</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/cedar-park/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/emerald-townhome</td>
+  <td style="font-size:.75rem">Cedar Park</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/lapis</td>
+  <td style="font-size:.75rem">DALLAS</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/lapis</td>
+  <td style="font-size:.75rem">FORT WORTH</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/lapis</td>
+  <td style="font-size:.75rem">AUSTIN</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/waco/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/lapis</td>
+  <td style="font-size:.75rem">WACO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/lapis</td>
+  <td style="font-size:.75rem">SAN ANTONIO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/lapis</td>
+  <td style="font-size:.75rem">HOUSTON</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/cedar-park/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/lapis</td>
+  <td style="font-size:.75rem">Cedar Park</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/onyx</td>
+  <td style="font-size:.75rem">DALLAS</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/onyx</td>
+  <td style="font-size:.75rem">FORT WORTH</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/onyx</td>
+  <td style="font-size:.75rem">AUSTIN</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/waco/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/onyx</td>
+  <td style="font-size:.75rem">WACO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/onyx</td>
+  <td style="font-size:.75rem">SAN ANTONIO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/onyx</td>
+  <td style="font-size:.75rem">HOUSTON</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/cedar-park/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/onyx</td>
+  <td style="font-size:.75rem">Cedar Park</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/dallas/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/sapphire-townhome</td>
+  <td style="font-size:.75rem">DALLAS</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/fort-worth/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/sapphire-townhome</td>
+  <td style="font-size:.75rem">FORT WORTH</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/austin/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/sapphire-townhome</td>
+  <td style="font-size:.75rem">AUSTIN</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/waco/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/sapphire-townhome</td>
+  <td style="font-size:.75rem">WACO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/san-antonio/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/sapphire-townhome</td>
+  <td style="font-size:.75rem">SAN ANTONIO</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/houston/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/sapphire-townhome</td>
+  <td style="font-size:.75rem">HOUSTON</td>
+</tr><tr>
+  <td><code style="font-size:.75rem;word-break:break-all">https://dev.rrone.in/cedar-park/</code></td>
+  <td><span class="badge" style="background:#ea580c">502</span></td>
+  <td>http-error</td>
+  <td style="font-size:.75rem">/cedar-park/l/sapphire-townhome</td>
+  <td style="font-size:.75rem">Cedar Park</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>Security Issues (2)</h2>
+
+<div class="issue-detail-card">
+  <div class="issue-header"><span class="badge" style="background:#d97706">medium</span> missing-header</div>
+  <div class="issue-explanation"><strong>What:</strong> Missing security header: strict-transport-security<br>
+<strong>Why:</strong> Security headers tell browsers how to handle your content. Missing headers leave your site vulnerable to clickjacking, XSS, MIME sniffing, and other attacks.<br>
+<strong>Fix:</strong> Add strict-transport-security response header<br>
+<strong>Affected URL:</strong> <code>https://dev.rrone.in</code></div>
+</div>
+<div class="issue-detail-card">
+  <div class="issue-header"><span class="badge" style="background:#ea580c">high</span> missing-header</div>
+  <div class="issue-explanation"><strong>What:</strong> Missing security header: content-security-policy<br>
+<strong>Why:</strong> Security headers tell browsers how to handle your content. Missing headers leave your site vulnerable to clickjacking, XSS, MIME sniffing, and other attacks.<br>
+<strong>Fix:</strong> Add content-security-policy response header<br>
+<strong>Affected URL:</strong> <code>https://dev.rrone.in</code></div>
+</div>
+
+
+
+</div>
+</body>
+</html>

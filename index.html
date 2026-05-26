@@ -6,35 +6,51 @@
 <title>AutoAudit — RedRiver Rent</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6}
-.container{max-width:800px;margin:0 auto;padding:3rem 1.5rem}
-h1{font-size:1.75rem;font-weight:800;margin-bottom:.5rem}
-.subtitle{color:#64748b;font-size:.9rem;margin-bottom:2rem}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh}
+.container{max-width:700px;margin:0 auto;padding:3rem 1.5rem}
+h1{font-size:1.75rem;font-weight:800;color:#fff;margin-bottom:.25rem}
+.subtitle{color:#94a3b8;font-size:.85rem;margin-bottom:2.5rem}
 .audit-list{list-style:none}
-.audit-item{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:.75rem;display:flex;align-items:center;justify-content:space-between;transition:border-color .15s}
+.audit-item{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:1.25rem 1.5rem;margin-bottom:.75rem;transition:border-color .15s}
 .audit-item:hover{border-color:#3b82f6}
 .audit-item:first-child{border-color:#16a34a;border-width:2px}
-.audit-date{font-weight:700;font-size:.9rem}
-.audit-badge{font-size:.65rem;font-weight:700;color:#fff;background:#16a34a;padding:.125rem .5rem;border-radius:99px;margin-left:.5rem}
-.audit-links{display:flex;gap:.75rem}
-.audit-links a{font-size:.8rem;font-weight:600;color:#2563eb;text-decoration:none}
-.audit-links a:hover{text-decoration:underline}
+.audit-row{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.audit-info{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
+.audit-date{font-weight:700;font-size:.9rem;color:#f1f5f9}
+.audit-time{font-size:.75rem;color:#64748b;font-family:monospace}
+.audit-badge{font-size:.6rem;font-weight:700;color:#fff;background:#16a34a;padding:.2rem .6rem;border-radius:99px}
+.view-btn{display:inline-flex;align-items:center;gap:.375rem;background:#3b82f6;color:#fff;padding:.5rem 1.25rem;border-radius:8px;font-size:.8rem;font-weight:700;text-decoration:none;transition:background .15s}
+.view-btn:hover{background:#2563eb}
+.footer{text-align:center;margin-top:3rem;font-size:.7rem;color:#475569}
 </style>
 </head>
 <body>
 <div class="container">
 <h1>AutoAudit Reports</h1>
-<p class="subtitle">Automated website audit for RedRiver Rent</p>
+<p class="subtitle">Automated website audits for RedRiver Rent — last 5 runs</p>
 <ul class="audit-list">
 <li class="audit-item">
-  <div><span class="audit-date">2026-05-26 13-10:04</span><span class="audit-badge">LATEST</span></div>
-  <div class="audit-links">
-    <a href="audits/2026-05-26T13-10-04-671Z/">View Report</a>
-    <a href="audits/2026-05-26T13-10-04-671Z/report.claude.md">Claude File</a>
-    <a href="audits/2026-05-26T13-10-04-671Z/report.json">JSON</a>
+  <div class="audit-row">
+    <div class="audit-info">
+      <span class="audit-date">2026-05-26</span>
+      <span class="audit-time">13:49:33 UTC</span>
+      <span class="audit-badge">LATEST</span>
+    </div>
+    <a class="view-btn" href="audits/2026-05-26T13-49-33-920Z/">View Report →</a>
+  </div>
+</li>
+<li class="audit-item">
+  <div class="audit-row">
+    <div class="audit-info">
+      <span class="audit-date">2026-05-26</span>
+      <span class="audit-time">13:10:04 UTC</span>
+      
+    </div>
+    <a class="view-btn" href="audits/2026-05-26T13-10-04-671Z/">View Report →</a>
   </div>
 </li>
 </ul>
+<p class="footer">Run a new audit from <a href="https://github.com/RedRiverOne/autoaudit/actions/workflows/audit.yml" style="color:#3b82f6">GitHub Actions</a></p>
 </div>
 </body>
 </html>
